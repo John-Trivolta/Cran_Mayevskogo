@@ -15,14 +15,14 @@ def random_predict():
     
     predict_number = np.random.randint(1, 101)  # загаданное компьютером число
     
-    min=1 
-    max=100 
+    min = 1 
+    max = 100 
     
     count = 0
 
     while True:
         count += 1
-        num = (min + max)//2
+        num = (min+max) // 2
         if num < predict_number:
             min = num + 1
         elif num > predict_number:
